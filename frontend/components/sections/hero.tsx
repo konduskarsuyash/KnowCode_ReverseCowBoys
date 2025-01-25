@@ -4,6 +4,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GradientText } from "@/components/ui/gradient-text";
 import { BackgroundLines } from "@/components/ui/background-lines"
+import { AnimatedFeatureBadge } from '@/components/ui/animated-badge'
 
 export function Hero() {
   return (
@@ -12,13 +13,15 @@ export function Hero() {
       <div/>
       <div className="container mx-auto px-4 py-20">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-          <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-purple-100/20">
+          {/* <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-purple-100/20">
             <Sparkles className="h-4 w-4 text-purple-600" />
-            <span className="text-sm font-medium bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+            <GradientText className="text-sm font-medium bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent animate-gradient">
               AI-Powered Call Management
-            </span>
+            </GradientText>
+          </div> */}
+          <div className="mb-8">
+            <AnimatedFeatureBadge />
           </div>
-          
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
             Transform Your BPO with{" "}
             <GradientText>Intelligent Automation</GradientText>

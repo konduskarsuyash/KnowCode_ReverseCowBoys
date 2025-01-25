@@ -108,7 +108,7 @@ export default function Calendar({
           buttonVariants({ variant: "ghost" }),
           "h-14 w-14 p-0 font-normal aria-selected:opacity-100 hover:bg-accent hover:text-black"
         ),
-        day_selected: "bg-primary text-primary-foreground hover:bg-accent hover:text-black focus:bg-primary focus:text-black",
+        day_selected: "bg-primary text-primary-foreground hover:bg-purple-500 hover:text-primary-foreground dark:focus:bg-primary focus:text-black",
         day_today: "bg-accent text-accent-foreground",
         day_outside: "text-muted-foreground opacity-50",
         day_disabled: "text-muted-foreground opacity-50",
